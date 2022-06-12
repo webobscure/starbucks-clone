@@ -1,0 +1,164 @@
+{
+  "menu": [
+    {
+      "name": "Americano",
+      "imgSrc": "./src/assets/americano.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Mocha",
+      "imgSrc": "./src/assets/mocha.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Latte",
+      "imgSrc": "./src/assets/latte.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Cappuchino",
+      "imgSrc": "./src/assets/cappuchino.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Caramel Macchiato",
+      "imgSrc": "./src/assets/caramel-macchiato.png",
+      "price": "1.50"
+    },
+    {
+      "name": "Espresso",
+      "imgSrc": "./src/assets/espresso.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Espresso Con Pana",
+      "imgSrc": "./src/assets/espresso-con-panna.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Espresso Macchiato",
+      "imgSrc": "./src/assets/espresso-macchiato.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Flat",
+      "imgSrc": "./src/assets/flat.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Brewed coffee",
+      "imgSrc": "./src/assets/brewedcoffee.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Pour Over",
+      "imgSrc": "./src/assets/pourover.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "French Press Coffee",
+      "imgSrc": "./src/assets/frenchpress.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Clover coffee",
+      "imgSrc": "./src/assets/clover.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Original hot chocolate",
+      "imgSrc": "./src/assets/choco.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Caramel Frappuccino",
+      "imgSrc": "./src/assets/caramel-frappuccino.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Classic Frappuccino",
+      "imgSrc": "./src/assets/classic-frappuchino.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Espresso Frappuccino",
+      "imgSrc": "./src/assets/espresso-frappuchino.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Chocolate Java Frappuccino",
+      "imgSrc": "./src/assets/java-chocolate-frappuchino.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Mocha Frappuccino",
+      "imgSrc": "./src/assets/mocha-frappuchino.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Chocolate Cream Frappuccino",
+      "imgSrc": "./src/assets/chocolate-cream-frappuchino.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Vanilla Cream Frappuccino",
+      "imgSrc": "./src/assets/vanilla-cream-frappuchino.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Croissant",
+      "imgSrc": "./src/assets/croissant.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Parrot cake",
+      "imgSrc": "./src/assets/parrot-cake.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Cheese croissant",
+      "imgSrc": "./src/assets/cheese-croissant.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Apple croissant",
+      "imgSrc": "./src/assets/apple-croissant.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Tuna salad",
+      "imgSrc": "./src/assets/tuna-salad.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Beef roll-sandwich",
+      "imgSrc": "./src/assets/roll-beef.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Fish roll-sandwich",
+      "imgSrc": "./src/assets/roll-fish.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Syrniki",
+      "imgSrc": "./src/assets/syrniki.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Chicken sandwich",
+      "imgSrc": "./src/assets/chichken-mushroom-sandwich.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Caesar Salad",
+      "imgSrc": "./src/assets/caesar-salad.jpg",
+      "price": "1.50"
+    },
+    {
+      "name": "Cranberry Parfe",
+      "imgSrc": "./src/assets/parfe-cranberry.jpg",
+      "price": "1.50"
+    }
+  ]
+}

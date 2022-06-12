@@ -1,6 +1,10 @@
 import React from 'react'
 
+import Fetch from '../server/fetch'
+
+
 export default function Menu() {
+
     return (
         <div className='container'>
             <div className="selectors">
@@ -18,14 +22,8 @@ export default function Menu() {
                 </div>
                 <div className="size"></div>
             </div>
-            <div className="items">
-                <div className="drinks">
-                    <div className="coffee">
-                        <p className="coffee-name">f</p>
-                        <img src="" alt="" className="coffee-image" />
-                        <p className="coffee-price"></p>
-                    </div>
-                </div>
+            <div className="menu">
+                <Fetch />
             </div>
         </div>
     )

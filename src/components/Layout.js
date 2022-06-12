@@ -45,8 +45,8 @@ export default function Header() {
                                 <span>Find a store</span>
                             </Link>
                         </li>
-                        <li><button className="btn btn-dark-outline">Sign in</button></li>
-                        <li><button className="btn btn-dark">Join now</button></li>
+                        <li><Link className="btn btn-dark-outline" to="/auth">Sign in</Link></li>
+                        <li><Link className="btn " to="/signup">Join now</Link></li>
 
                     </ul>
                     <button type='button' className="hamburger" id="menu-btn" onClick={() => navToggle()}>
