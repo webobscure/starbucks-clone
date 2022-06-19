@@ -5,7 +5,9 @@ import Home from './pages/Home'
 import Menu from './pages/Menu'
 import Rewards from './pages/Rewards'
 import GiftCards from './pages/GiftCard'
-import Form from './pages/Form/Form'
+import Signup from './pages/Form/Signup'
+import Auth from './pages/Form/Auth'
+
 
 
 
@@ -27,8 +29,8 @@ function App() {
             <Route path="/rewards" element={<Rewards />} />
             <Route path="/cards" element={<GiftCards />} />
           </Route>
-          <Route path="/auth" element={<Form />} />
-          <Route path="/signup" element={<Form />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
     </>
   );
