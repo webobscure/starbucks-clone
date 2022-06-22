@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './Form.module.css';
 import classNames from 'classnames';
 import logo from '../../assets/starbucks_logo.png';
+import { Link } from 'react-router-dom';
 
-export default function Auth() {
+export default function Form({title, handleClick}) {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
   return (
     <div className={classes.Form}>
       <div className={classes.cover}>
@@ -35,6 +39,7 @@ export default function Auth() {
                   type="text"
                   name="email"
                   id="email"
+                  value={email}
                   placeholder="Enter your email"
                   required
                 />
@@ -45,6 +50,7 @@ export default function Auth() {
                   type="text"
                   name="password"
                   id="password"
+                  value={password}
                   placeholder="Enter your password"
                   required
                 />
@@ -52,11 +58,15 @@ export default function Auth() {
               <div className={classes.text}>
                 <a href="vk.com">Forgot password?</a>
               </div>
-              <div className={classNames(classes.inputBox, classes.button)}>
-                <input type="submit" value="Submit" />
-              </div>
+              <button className={classNames(classes.inputBox, classes.button)} onClick={() => handleClick( email , password )}>
+                {title}
+              </button>
               <div>
-                Don't have an account? <label htmlFor="flip">Signup Now</label>
+                Don't have an account?{' '}
+                <label htmlFor="flip">
+                  {' '}
+                  <Link to="/signup"> Sign in Now</Link>
+                </label>
               </div>
             </div>
           </div>

@@ -5,8 +5,8 @@ import Home from './pages/Home'
 import Menu from './pages/Menu'
 import Rewards from './pages/Rewards'
 import GiftCards from './pages/GiftCard'
-import Signup from './pages/Form/Signup'
-import Auth from './pages/Form/Auth'
+import Signup from './components/Form/Signup'
+import Auth from './components/Form/Auth'
 
 
 
