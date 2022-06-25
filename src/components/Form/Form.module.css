@@ -150,16 +150,17 @@ form .content .button {
     margin-top: 40px;
 }
 
-form .content .button button {
+form .content .button {
     color: #fff;
     background: rgb(45, 158, 17);
     border-radius: 6px;
+    border-color: rgb(45, 158, 17);
     padding: 0;
     cursor: pointer;
     transition: all 0.4s ease;
 }
 
-form .content .button button:hover {
+form .content .button:hover {
     background: rgb(36, 136, 12);
 }
 

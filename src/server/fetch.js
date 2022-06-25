@@ -12,7 +12,6 @@ function Fetch() {
             const data = await getDocs(docsCollectionRef)
             setAllDocs(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
         }
-
         getMenu()
     })
 
