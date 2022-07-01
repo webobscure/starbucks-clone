@@ -14,6 +14,7 @@ export default function Signup() {
   const dispatch = useDispatch();
 
   const handleRegister = (email, password) => {
+    
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password).then(console.log).catch(console.error);
   };
@@ -68,14 +69,14 @@ export default function Signup() {
               </div>
               <button
                 className={classNames(classes.inputBox, classes.button)}
-                onClick={handleRegister}>
+                onClick={() => console.log(handleRegister)}>
                 Register
               </button>
               <div>
                 Already have an account?{' '}
                 <label htmlFor="flip">
                   {' '}
-                  <Link to="/signup"> Sign in Now</Link>
+                  <Link to="/auth"> Sign in Now</Link>
                 </label>
               </div>
             </div>
