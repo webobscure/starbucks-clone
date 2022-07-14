@@ -19,7 +19,7 @@ function Fetch() {
         <>
                 {allDocs.map((document) => {
                     return (
-                        <div id={document.id} className='menu-column'>
+                        <div key={document.id} className='menu-column'>
                             <h1 className='menu-column_name'>{document.name}</h1>
                             <img src={document.imgSrc} alt="menu" className="menu-column_img" />
                             <h2 className='menu-column_price'>{document.price} $</h2>

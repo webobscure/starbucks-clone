@@ -1,22 +1,34 @@
 import React, { useState } from 'react';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import { setUser } from '../../server/store/slices/userSlice';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import classes from './Form.module.css';
 import logo from '../../assets/starbucks_logo.png';
+import { setUser } from '../../server/store/slices/userSlice';
+import { useNavigate } from 'react-router-dom';
 
 import classNames from 'classnames';
 
 export default function Auth() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const { navigate } = useNavigate();
 
   const dispatch = useDispatch();
 
   const handleLogin = (email, password) => {
     const auth = getAuth();
-    signInWithEmailAndPassword(auth, email, password).then(console.log).catch(console.error);
+    signInWithEmailAndPassword(auth, email, password)
+    .then(({ user }) => {
+      console.log(user);
+      dispatch(
+        setUser({
+          email: user.email,
+          id: user.uid,
+          token: user.accessToken,
+        }));
+    })
+    .catch(console.error);
   };
 
   return (

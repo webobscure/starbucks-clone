@@ -1,22 +1,36 @@
 import React, { useState } from 'react';
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { setUser } from '../../server/store/slices/userSlice';
 import { useDispatch } from 'react-redux';
+
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+
 import classes from './Form.module.css';
 import logo from '../../assets/starbucks_logo.png';
 import classNames from 'classnames';
+import { auth } from '../../firebase'
 
 export default function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const { navigate } = useNavigate();
 
   const dispatch = useDispatch();
 
   const handleRegister = (email, password) => {
-    
-    const auth = getAuth();
-    createUserWithEmailAndPassword(auth, email, password).then(console.log).catch(console.error);
+    createUserWithEmailAndPassword(auth, email, password)
+      .then(({ user }) => {
+        console.log(user);
+        dispatch(
+          setUser({
+            email: user.email,
+            id: user.uid,
+            token: user.accessToken,
+          }));
+          navigate('/')
+      })
+      .catch(console.error);
   };
 
   return (
@@ -69,7 +83,7 @@ export default function Signup() {
               </div>
               <button
                 className={classNames(classes.inputBox, classes.button)}
-                onClick={() => console.log(handleRegister)}>
+                onClick={handleRegister}>
                 Register
               </button>
               <div>

@@ -1,17 +1,17 @@
 
 
 
-import Home from './pages/Home'
-import Menu from './pages/Menu'
-import Rewards from './pages/Rewards'
-import GiftCards from './pages/GiftCard'
-import Signup from './components/Form/Signup'
-import Auth from './components/Form/Auth'
+import Home from './pages/Home.jsx'
+import Menu from './pages/Menu.jsx'
+import Rewards from './pages/Rewards.jsx'
+import GiftCards from './pages/GiftCard.jsx'
+import Signup from './components/Form/Signup.jsx'
+import Auth from './components/Form/Auth.jsx'
 
 
 
 
-import Layout from './components/Layout'
+import Layout from './components/Layout.jsx'
 
 import { Route, Routes } from 'react-router-dom'
 
