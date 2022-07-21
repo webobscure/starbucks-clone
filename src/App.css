@@ -509,3 +509,9 @@ section a {
   align-items: center;
   justify-content: center;
 }
+
+.check {
+  position: absolute;
+  left: 540px;
+  margin-top: -30px;
+}

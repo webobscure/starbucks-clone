@@ -5,8 +5,7 @@ import Home from './pages/Home.jsx'
 import Menu from './pages/Menu.jsx'
 import Rewards from './pages/Rewards.jsx'
 import GiftCards from './pages/GiftCard.jsx'
-import Signup from './components/Form/Signup.jsx'
-import Auth from './components/Form/Auth.jsx'
+
 
 
 
@@ -14,6 +13,9 @@ import Auth from './components/Form/Auth.jsx'
 import Layout from './components/Layout.jsx'
 
 import { Route, Routes } from 'react-router-dom'
+import { Login } from './components/Form/Login.jsx'
+import { Register } from './components/Form/Register.jsx'
+
 
 
 
@@ -29,8 +31,8 @@ function App() {
             <Route path="/rewards" element={<Rewards />} />
             <Route path="/cards" element={<GiftCards />} />
           </Route>
-          <Route path="/auth" element={<Auth />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/auth" element={<Login />} />
+          <Route path="/signup" element={<Register />} />
         </Routes>
     </>
   );

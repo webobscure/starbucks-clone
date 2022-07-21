@@ -55,7 +55,7 @@
 
 
 
-.Form form {
+.Form .Auth {
     height: 100%;
     width: 100%;
     background: #fff;
@@ -72,14 +72,14 @@
     width: calc(100% / 2 - 25px);
 }
 
-form .content .title {
+div .content .title {
     position: relative;
     font-size: 24px;
     font-weight: 500;
     color: #333;
 }
 
-form .content .title:before {
+div .content .title:before {
     content: '';
     position: absolute;
     left: 0;
@@ -89,15 +89,15 @@ form .content .title:before {
     background: rgb(45, 158, 17);
 }
 
-form .signupForm .title:before {
+div .signupForm .title:before {
     width: 20px;
 }
 
-form .content .inputBoxes {
+div .content .inputBoxes {
     margin-top: 20px;
 }
 
-form .content .inputBox {
+div .content .inputBox {
     display: flex;
     align-items: center;
     height: 50px;
@@ -130,27 +130,27 @@ form .content .inputBox {
     font-size: 17px;
 }
 
-form .content .text {
+div .content .text {
     font-size: 14px;
     font-weight: 500;
     color: #333;
 
 }
 
-form .content .text a {
+div .content .text a {
     text-decoration: none;
 }
 
-form .content .text a:hover {
+div .content .text a:hover {
     text-decoration: underline;
 }
 
-form .content .button {
+div .content .button {
     color: #fff;
     margin-top: 40px;
 }
 
-form .content .button {
+div .content .button {
     color: #fff;
     background: rgb(45, 158, 17);
     border-radius: 6px;
@@ -160,15 +160,15 @@ form .content .button {
     transition: all 0.4s ease;
 }
 
-form .content .button:hover {
+div .content .button:hover {
     background: rgb(36, 136, 12);
 }
 
-form .content label {
+div .content label {
     color: rgb(36, 136, 12);
     cursor: pointer;
 }
 
-form .content label:hover {
+div .content label:hover {
     text-decoration: underline;
 }

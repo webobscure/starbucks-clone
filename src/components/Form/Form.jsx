@@ -1,38 +1,10 @@
-import React, { useState } from 'react';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import { useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import classes from './Form.module.css';
-import logo from '../../assets/starbucks_logo.png';
-import { setUser } from '../../server/store/slices/userSlice';
-import { useNavigate } from 'react-router-dom';
-
 import classNames from 'classnames';
-
-export default function Auth() {
+import logo from '../../assets/starbucks_logo.png';
+const Form = ({ title, handleClick }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { navigate } = useNavigate();
-
-  const dispatch = useDispatch();
-
-  const handleLogin = (email, password) => {
-    console.log(email,password);
-
-    const auth = getAuth();
-    signInWithEmailAndPassword(auth, email, password)
-    .then(({ user }) => {
-      console.log(user);
-      dispatch(
-        setUser({
-          email: user.email,
-          id: user.uid,
-          token: user.accessToken,
-        }));
-        navigate('/menu')
-    })
-    .catch((e) => alert(e));
-  };
 
   return (
     <div className={classes.Form}>
@@ -54,17 +26,17 @@ export default function Auth() {
           </div>
         </div>
       </div>
-      <div  className={classes.Auth}>
+      <div className={classes.Auth}>
         <div className={classes.content}>
           <div className={classes.loginForm}>
-            <div className={classes.title}>Login</div>
+            <div className={classes.title}>{title}</div>
             <div className={classes.inputBoxes}>
               <div className={classes.inputBox}>
                 <i className="fas fa-envelope"></i>
                 <input
-                  type="email"
+                  type="text"
                   value={email}
-                  onChange = {(e) => setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   required
                 />
@@ -79,25 +51,17 @@ export default function Auth() {
                   required
                 />
               </div>
-              <div className={classes.text}>
-                <a href="vk.com">Forgot password?</a>
-              </div>
               <button
                 className={classNames(classes.inputBox, classes.button)}
-                onClick={handleLogin}>
-               Login
+                onClick={() => handleClick(email, password)}>
+                {title}
               </button>
-              <div>
-                Don't have an account?{' '}
-                <label htmlFor="flip">
-                  {' '}
-                  <Link to="/signup"> Sign up Now</Link>
-                </label>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export { Form };
