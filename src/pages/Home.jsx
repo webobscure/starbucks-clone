@@ -9,13 +9,11 @@ import boxE from '../assets/box-e.jpg';
 import boxF1 from '../assets/box-f1.jpg';
 import boxF2 from '../assets/box-f2.jpg';
 
-import { Link, Navigate } from 'react-router-dom';
-import { useAuth } from 'hooks/use-auth';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
-  const { isAuth} = useAuth()
 
-  return isAuth ? (
+  return  (
     <div>
     <section className="box box-a bg-primary text-center py-md">
       <div className="box-inner">
@@ -118,7 +116,5 @@ export default function Home() {
       </div>
     </section>
   </div>
-  ) : (
-    <Navigate to='/auth' />
   )
 }

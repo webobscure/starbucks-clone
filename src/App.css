@@ -77,12 +77,11 @@ section a {
   font-weight: bold;
 }
 
-.navbar a {
+.navbar button {
   color: #000;
-  text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar button:hover {
   color: var(--color-primary);
 }
 
@@ -136,8 +135,10 @@ section a {
   border-radius: 50px;
   padding: 7px 16px;
   line-height: 1.2;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 
@@ -253,6 +254,7 @@ section a {
 
 .box-f .box-text {
   max-width: 600px;
+  max-height: 708px;
 }
 
 .box a {
@@ -288,6 +290,8 @@ section a {
   height: 1px;
   background-color: #ccc;
   margin: 40px auto;
+  margin-top: 1975px;
+
 }
 
 /* Hamburger Menu Icon */
