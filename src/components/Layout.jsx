@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
 import Footer from './Footer';
 
 import logo from '../assets/starbucks_logo.png';
 import marker from '../assets/marker.svg';
+import cart from '../assets/cart.svg';
+
 import { useAuth } from 'hooks/use-auth';
 import { removeUser } from 'server/store/slices/userSlice';
 import { useDispatch } from 'react-redux';
@@ -18,9 +20,12 @@ function navToggle() {
   document.body.classList.toggle('no-scroll');
 }
 
-export default function Header() {
+export default function Header(props) {
   const dispatch = useDispatch();
   const { isAuth, email } = useAuth();
+  let counter = {
+    count : 0
+  }
 
   return isAuth ? (
     <div>
@@ -46,9 +51,13 @@ export default function Header() {
           <ul className="navbar-nav-right">
             <li>
               <Link to="/">
-                <img src={marker} alt="" />
+                <img src={marker} alt="find a store" />
                 <span>Find a store</span>
               </Link>
+            </li>
+            <li className="shopping-cart">
+              <img src={cart} alt="cart" className="cart" />
+              <span className="badge">{props.count}</span>
             </li>
             <li>Hello, {email} </li>
             <li>
@@ -71,7 +80,6 @@ export default function Header() {
         <div className="divider"></div>
         <Footer />
       </div>
-
     </div>
   ) : (
     <div>
@@ -97,9 +105,13 @@ export default function Header() {
           <ul className="navbar-nav-right">
             <li>
               <Link to="/">
-                <img src={marker} alt="" />
+                <img src={marker} alt="marker" className="marker" />
                 <span>Find a store</span>
               </Link>
+            </li>
+            <li className="shopping-cart">
+              <img src={cart} alt="cart" className="cart" />
+              <span className="badge">{props.count}</span>
             </li>
             <li>
               <Link className="btn btn-dark-outline" to="/auth">
