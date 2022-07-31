@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import Fetch from '../server/fetch'
 
@@ -6,19 +6,14 @@ import Fetch from '../server/fetch'
 
 
 export default function Menu() {
-    const {counter, setCounter} = useState('')
-
-    const handleCounter = (props) => {
-        setCounter( props.count + 1 );
-    }
-
+   
 
     return (
         <div className='container'>
             <div className="selectors">
                 <div className="types">
                     <ul className='types-list'>
-                        <li><button onClick={handleCounter}>Espresso drinks</button></li>
+                        <li><button >Espresso drinks</button></li>
                         <li>Traditional coffee</li>
                         <li>Hot Chocolate</li>
                         <li>Frappuchino coffe</li>
