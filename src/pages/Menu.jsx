@@ -13,7 +13,7 @@ export default function Menu() {
             <div className="selectors">
                 <div className="types">
                     <ul className='types-list'>
-                        <li><button >Espresso drinks</button></li>
+                        <li>Espresso drinks</li>
                         <li>Traditional coffee</li>
                         <li>Hot Chocolate</li>
                         <li>Frappuchino coffe</li>

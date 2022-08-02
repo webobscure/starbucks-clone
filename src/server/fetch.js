@@ -13,7 +13,7 @@ function Fetch() {
             setAllDocs(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
         }
         getMenu()
-    },[docsCollectionRef])
+    })
 
   
 
@@ -25,7 +25,7 @@ function Fetch() {
                             <h1 className='menu-column_name'>{document.name}</h1>
                             <img src={document.imgSrc} alt="menu" className="menu-column_img" />
                             <h2 className='menu-column_price'>{document.price} $</h2>
-                            <button className="btn btn-dark-outline" > buy </button>
+                            <button className="btn btn-dark-outline"> buy </button>
                         </div>
                     )
                 })}

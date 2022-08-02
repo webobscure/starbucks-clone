@@ -513,6 +513,24 @@ section a {
   overflow: hidden;
 }
 
+
+/* GiftCards */
+
+.gift-cards {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.gift-card {
+  margin-top: 10px;
+  height: 200px;
+  width: 300px;
+  border-radius: 10%;
+  background: linear-gradient(to right, #659999, #f4791f);
+  box-shadow: 12px 12px 12px 1px gray;
+}
+
 /* Media query */
 @media(max-width: 768px) {
   .hamburger {
