@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-
 :root {
   --color-primary: #006241;
   --color-secondary: #d50032;
@@ -35,8 +34,6 @@ body {
   top: 100px;
 }
 
-
-
 a {
   color: #000;
 }
@@ -61,7 +58,7 @@ section a {
 /* Navbar */
 .navbar {
   width: 100%;
-  height: auto;
+  height: 100px;
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
@@ -85,6 +82,14 @@ section a {
 .navbar li {
   margin: 0 15px;
   font-weight: bold;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: var(--color-primary);
 }
 
 .navbar button {
@@ -136,13 +141,10 @@ section a {
   white-space: nowrap;
 }
 
-  
-
-
-
 .navbar-nav-right li:nth-child(2) {
   margin: 0 5px;
 }
+
 /* Cart */
 
 .shopping-cart {
@@ -159,28 +161,35 @@ section a {
   border-bottom: 1px solid #e8e8e8;
   padding-bottom: 15px;
 }
+
 .shopping-cart .shopping-cart-header .shopping-cart-total {
   float: right;
 }
+
 .shopping-cart .shopping-cart-items {
   padding-top: 20px;
 }
+
 .shopping-cart .shopping-cart-items li {
   margin-bottom: 18px;
 }
+
 .shopping-cart .shopping-cart-items img {
   float: left;
   margin-right: 12px;
 }
+
 .shopping-cart .shopping-cart-items .item-name {
   display: block;
   padding-top: 10px;
   font-size: 16px;
 }
+
 .shopping-cart .shopping-cart-items .item-price {
   color: #6394f8;
   margin-right: 8px;
 }
+
 .shopping-cart .shopping-cart-items .item-quantity {
   color: #abb0be;
 }
@@ -217,6 +226,7 @@ section a {
   font-size: 16px;
   margin: 25px 0 15px 0;
 }
+
 .button:hover {
   background: #729ef9;
 }
@@ -230,6 +240,7 @@ section a {
 .toggle {
   opacity: 0;
 }
+
 /* Grid Styles */
 .grid-col-2 {
   display: grid;
@@ -270,6 +281,7 @@ section a {
 .btn-light-outline:hover {
   background-color: rgba(0, 0, 0, 0.06);
 }
+
 
 .btn-dark {
   background-color: #000;
@@ -517,7 +529,7 @@ section a {
 /* GiftCards */
 
 .gift-cards {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
 }
@@ -658,3 +670,128 @@ section a {
   left: 540px;
   margin-top: -30px;
 }
+
+
+/* Rewards */
+
+.main {
+  position: relative;
+  z-index: 1;
+}
+
+.banner {
+  height: 50px;
+  position: sticky;
+  width: 100%;
+  z-index: 3;
+  background-color: var(--color-primary);
+}
+
+.maxWidth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-top: 8px;
+  margin-left: 250px;
+}
+
+.textWhite {
+  color: #fff;
+}
+
+.sections {
+  margin-bottom : 72px;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  float: left;
+}
+
+.items-start {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.textBlock {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.29;
+}
+
+.bgImage {
+  background: rgb( 212, 233, 226 ) url(https://www.starbucks.com/weblx/images/rewards/hero/xl-hero-desktop_2021.png) no-repeat;
+}
+
+.contentColumn {
+  max-width: 1440px;
+  box-sizing: content-box;
+  
+}
+
+.global {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+.size12of12 {
+  width: 100%;
+}
+
+.px0 {
+  padding-left: 0;
+}
+
+.mx-auto {
+  margin-left: auto;
+}
+
+.contentColumn__inner {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.flexEmbed {
+  float: left;
+  width: 0;
+}
+
+.pb {
+  padding-bottom: 56.25%;
+}
+
+.items-center {
+  align-items: center !important;
+}
+
+.justify-start {
+  justify-content: flex-start !important;
+}
+
+.py5 {
+  padding-bottom: 3.2rem !important;
+  padding-top: 3.2rem !important;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+

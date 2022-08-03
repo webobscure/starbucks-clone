@@ -86,7 +86,7 @@ export default function Header(props) {
             </Link>
           </li>
           <li>
-            <Link className="btn " to="/signup">
+            <Link className="btn btn-dark " to="/signup">
               Join now
             </Link>
           </li>
@@ -175,10 +175,9 @@ export default function Header(props) {
         </div>
       </div>
 
-      <div className="container">
+      <div >
         <Outlet />
-        <div className="divider"></div>
-        <Footer />
+        
       </div>
     </div>
   )
