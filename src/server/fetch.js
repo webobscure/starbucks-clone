@@ -13,7 +13,7 @@ function Fetch() {
             setAllDocs(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
         }
         getMenu()
-    })
+    }, [docsCollectionRef])
 
   
 

@@ -81,12 +81,12 @@ export default function Header(props) {
             </Link>
           </li>
           <li>
-            <Link className="btn btn-dark-outline" to="/auth">
+            <Link className="btn btn-dark-outline uppercase" to="/auth">
               Sign in
             </Link>
           </li>
           <li>
-            <Link className="btn btn-dark " to="/signup">
+            <Link className="btn btn-dark  uppercase" to="/signup">
               Join now
             </Link>
           </li>
@@ -115,8 +115,8 @@ export default function Header(props) {
         </ul>
 
         <div class="mobile-menu-bottom">
-          <button class="btn btn-dark-outline">Sign in</button>
-          <button class="btn btn-dark">Join now</button>
+          <button class="btn btn-dark-outline uppercase">Sign in</button>
+          <button class="btn btn-dark uppercase">Join now</button>
           <div>
             <Link to="/">
               <img src={marker} alt="" />

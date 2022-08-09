@@ -268,9 +268,17 @@ section a {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  
 }
 
+.btn-green {
+  color: var(--color-extra);
+  background: var(--color-primary);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
 
 .btn-dark-outline {
   border-color: #000;
@@ -734,6 +742,15 @@ section a {
 
 .bgImage {
   background: rgb( 212, 233, 226 ) url(https://www.starbucks.com/weblx/images/rewards/hero/xl-hero-desktop_2021.png) no-repeat;
+}
+
+.invite {
+  font-weight: 600;
+}
+
+.invite-button {
+  color: var(--color-primary);
+  border-radius: 20px;
 }
 
 .contentColumn {

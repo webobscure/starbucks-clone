@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import xlHero from '../assets/xl-hero-desktop_2021.png';
 
 export default function Rewards() {
   return (
@@ -16,22 +16,16 @@ export default function Rewards() {
         <div className="sections">
           <div className="flex bgImage">
             <div className="bgHero">
-              <div className=" size12of12 contentColumn mx-auto px0 global">
-                <div className="contentColumn__inner flex">
-                  <div className="flex size12of12 clearfix">
-                    <div className="flexEmbed pb">
-                      <div className="flex size12of12 items-center justify-start">
-                        <div className="textBlock py5 global">
-                          <h2 className="heading text-xl text-semibold" tabIndex={-1}>
-                            Free coffee
-                            <br />
-                            Is a tap away
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="textBlock py5 global">
+                <h2 className=" text-xl text-semibold" tabIndex={-1}>
+                  Free coffee
+                  <br />
+                  Is a tap away
+                </h2>
+
+                <p className="invite"> Join now to start earning Rewards.</p>
+
+                <Link className="btn btn-green" to='/signup'>Join Now</Link>
               </div>
             </div>
           </div>
