@@ -735,15 +735,29 @@ section a {
   
 }
 
+.pt5 {
+  padding-top: 3.2rem;
+}
+
+.mt3 {
+  margin-top: 1.6rem;
+}
+
 .text-xl {
   font-size: 2.2rem;
   line-height: 1.29;
 }
 
 .bgImage {
-  background: rgb( 212, 233, 226 ) url(https://www.starbucks.com/weblx/images/rewards/hero/xl-hero-desktop_2021.png) no-repeat;
+  background: rgb( 212, 233, 226 );
 }
 
+.bg {
+  position: absolute;
+  width: 1500px;
+  height: 357px;
+  left: 500px;
+}
 .invite {
   font-weight: 600;
 }
