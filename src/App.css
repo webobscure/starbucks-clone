@@ -687,6 +687,14 @@ section a {
   z-index: 1;
 }
 
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding-top: 48px;
+}
+
+
 .banner {
   height: 50px;
   position: sticky;
@@ -739,6 +747,10 @@ section a {
   padding-top: 3.2rem;
 }
 
+.pt3 {
+  padding-top: 1.6rem;
+}
+
 .mt3 {
   margin-top: 1.6rem;
 }
@@ -756,8 +768,18 @@ section a {
   position: absolute;
   width: 1500px;
   height: 357px;
-  left: 500px;
+  left: 420px;
 }
+
+.suggestions {
+  margin: 0 auto;
+}
+
+.number {
+  margin: 0 auto;
+  max-width: 128px;
+}
+
 .invite {
   font-weight: 600;
 }
@@ -821,6 +843,7 @@ section a {
   padding-bottom: 3.2rem !important;
   padding-top: 3.2rem !important;
 }
+
 
 .text-semibold {
   font-weight: 600;
