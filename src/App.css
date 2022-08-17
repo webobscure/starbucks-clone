@@ -4,7 +4,7 @@
   --color-primary: #006241;
   --color-secondary: #d50032;
   --color-extra: #d4e9e2;
-
+  --color-starbucks: #00a862;
 }
 
 * {
@@ -752,8 +752,10 @@ section a {
 }
 
 .mt3 {
-  margin-top: 1.6rem;
+  margin-top: 1.6rem ;
 }
+
+
 
 .text-xl {
   font-size: 2.2rem;
@@ -831,6 +833,10 @@ section a {
   padding-bottom: 56.25%;
 }
 
+.link {
+  color: var(--color-starbucks);
+}
+
 .items-center {
   align-items: center !important;
 }
@@ -844,8 +850,22 @@ section a {
   padding-top: 3.2rem !important;
 }
 
+.pb3 {
+  padding-bottom: 1.6rem;
+}
+
 
 .text-semibold {
   font-weight: 600;
 }
 
+.text-mn {
+  font-size: 2rem;
+  line-height: 1.385;
+}
+
+
+.global {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}

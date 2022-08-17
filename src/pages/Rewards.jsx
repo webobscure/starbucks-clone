@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Carousel from '../components/Carousel'
 
 import gettingStartedOne from '../assets/getting-started-1.png';
 import gettingStartedTwo from '../assets/getting-started-2@2x.png';
@@ -28,7 +29,7 @@ export default function Rewards() {
                   Is a tap away
                 </h2>
 
-                <p className="invite s"> Join now to start earning Rewards.</p>
+                <p className="invite"> Join now to start earning Rewards.</p>
 
                 <Link className="btn btn-green mt3 " to="/signup">
                   Join Now
@@ -37,8 +38,8 @@ export default function Rewards() {
             </div>
           </div>
         </div>
-        <div className="sections row ">
-          <div className="textBlock ">
+        <div className="sections ">
+          <div className="textBlock">
             <h1> Getting started is easy</h1>
 
             <p>Earn stars and get rewarded in a few easy steps.</p>
@@ -53,8 +54,12 @@ export default function Rewards() {
                 <h2 className="text-suggestions text-semibold">Create an account</h2>
 
                 <p className="pt3">
-                  To get started, join now. You can also join in the app to get access to the full
-                  range os Starbucks Rewards benefits
+                  To get started,{' '}
+                  <Link to="/signup" className="link">
+                    join now
+                  </Link>
+                  . You can also <Link to='/signup' className='link'>join in the app</Link> to get access to the full range os Starbucks
+                  Rewards benefits
                 </p>
               </div>
             </div>
@@ -68,7 +73,11 @@ export default function Rewards() {
 
                 <p className="pt3">
                   Use cash, credit/debit card or save some time and pay right though the app. You'll
-                  collect Stars all ways. Learn more.
+                  collect Stars all ways.{' '}
+                  <Link to="/auth" className="link">
+                    Learn more
+                  </Link>
+                  .
                 </p>
               </div>
             </div>
@@ -85,6 +94,16 @@ export default function Rewards() {
                   more. Start redeeming with as little as 25 Stars!
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="sections">
+          <div className="global pt7 px0 text-center">
+            <div className="px3">
+              <h2 className='text-mn text-semibold pb3' tabIndex={-1}> Get your favorites for free</h2>
+            </div>
+            <div>
+              <Carousel />
             </div>
           </div>
         </div>
