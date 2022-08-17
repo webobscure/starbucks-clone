@@ -1,5 +1,6 @@
 import * as React from 'react'
 import propTypes from 'prop-types';
+import { Box, Typography } from '@mui/material';
 
 
 
@@ -14,7 +15,12 @@ function TabPanel(props) {
         aria-labelledby = {`full-width-tap-${index}`}
         {...other}
         >
-
+        
+        {value === index && (
+            <Box sx={{ p: 3}}>
+                <Typography>{children}</Typography>
+            </Box>
+        )}
         </div>
     )
 }
