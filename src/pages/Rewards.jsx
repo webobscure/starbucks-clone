@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Carousel from '../components/Carousel'
+import Tabs from '../components/Tabs'
 
 import gettingStartedOne from '../assets/getting-started-1.png';
 import gettingStartedTwo from '../assets/getting-started-2@2x.png';
@@ -102,8 +102,8 @@ export default function Rewards() {
             <div className="px3">
               <h2 className='text-mn text-semibold pb3' tabIndex={-1}> Get your favorites for free</h2>
             </div>
-            <div>
-              <Carousel />
+            <div className='text-center'>
+              <Tabs />
             </div>
           </div>
         </div>
