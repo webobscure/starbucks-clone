@@ -52,16 +52,20 @@ export default function FullWidthTabs() {
                             <Typography variant='body1' className='rewards-text'>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup</Typography>
                         </TabPanel>
                         <TabPanel value={value} index={1} dir={theme.direction}>
-                            Item one
+                            <Typography variant="h2">Brewed hot coffe, bakery item of hot tea</Typography>
+                            <Typography varoant="body1">Pair coffee cake or an almond croissant woth your fresh cup of hot brew.</Typography>
                         </TabPanel>
                         <TabPanel value={value} index={2} dir={theme.direction}>
-                            Item one
+                            <Typography variant="h2">Handcrafted drink, hot breakfast or parfait</Typography>
+                            <Typography varoant="body1">Have a really good morning with a breakfast sandwich, oatmeal or your favorite drink.</Typography>
                         </TabPanel>
                         <TabPanel value={value} index={3} dir={theme.direction}>
-                            Item one
+                            <Typography variant="h2">Salad, sandwich or protein box</Typography>
+                            <Typography varoant="body1">Nourish your day with a hearty Chipotle Chicken Wrap or Eggs & Cheese Protein Box.</Typography>
                         </TabPanel>
                         <TabPanel value={value} index={4} dir={theme.direction}>
-                            Item one
+                            <Typography variant="h2">Select merchandise or at-home coffee</Typography>
+                            <Typography varoant="body1">Take home a signature cup, a bag of coffee or your choice of select coffee accessories.</Typography>
                         </TabPanel>
                 </SwipeableViews>
             </Box>
