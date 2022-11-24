@@ -869,3 +869,13 @@ section a {
   padding-left: 1.6rem;
   padding-right: 1.6rem;
 }
+
+.tabs-group {
+  margin-left: 36%;
+}
+
+.tabs-group_panel {
+  background-color:#fff !important;
+  color: #000 !important;
+}
+
