@@ -6,6 +6,10 @@ import gettingStartedOne from '../assets/getting-started-1.png';
 import gettingStartedTwo from '../assets/getting-started-2@2x.png';
 import gettingStartedThree from '../assets/getting-started-3@2x.png';
 import bgHero from '../assets/xl-hero-desktop_2021.png';
+import benefits from '../assets/benefits.png'
+import freebies from '../assets/freebies.png'
+import iceCream from '../assets/ice-cream.png'
+
 
 export default function Rewards() {
   return (
@@ -104,6 +108,54 @@ export default function Rewards() {
             </div>
             <div className='text-center'>
               <Tabs />
+            </div>
+          </div>
+        </div>
+        <div className="sections ">
+          <div className="textBlock">
+            <h1> Endless extras</h1>
+
+            <p>Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee.</p>
+          </div>
+          <div className="columns">
+            <div className="column">
+              <div className="number text-center">
+                <img src={freebies} alt="1" width={48} />
+              </div>
+
+              <div className="cardContent text-center">
+                <h2 className="text-suggestions text-semibold">Fun freebies</h2>
+
+                <p className="pt3">
+                Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.
+                </p>
+              </div>
+            </div>
+            <div className="column">
+              <div className="number text-center">
+                <img src={benefits} alt="2" width={48} />
+              </div>
+
+              <div className="cardContent text-center">
+                <h2 className="text-suggestions text-semibold">Order & pay ahead</h2>
+
+                <p className="pt3">
+                Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.
+                </p>
+              </div>
+            </div>
+            <div className="column">
+              <div className="number text-center">
+                <img src={iceCream} alt="3" width={48} />
+              </div>
+
+              <div className="cardContent text-center">
+                <h2 className="text-suggestions text-semibold">Get to free faster</h2>
+
+                <p className="pt3">
+                Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.
+                </p>
+              </div>
             </div>
           </div>
         </div>

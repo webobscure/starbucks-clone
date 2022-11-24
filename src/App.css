@@ -326,6 +326,10 @@ section a {
   color: #000;
 }
 
+.bgHero {
+  margin-left: 250px;
+}
+
 /* Text Styling */
 .text-center {
   text-align: center;
