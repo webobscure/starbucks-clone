@@ -54,7 +54,7 @@ export default function Rewards() {
                 <img src={gettingStartedOne} alt="1" width={48} />
               </div>
 
-              <div className="cardContent text-center">
+              <div className=" text-center">
                 <h2 className="text-suggestions text-semibold">Create an account</h2>
 
                 <p className="pt3">
@@ -72,7 +72,7 @@ export default function Rewards() {
                 <img src={gettingStartedTwo} alt="2" width={48} />
               </div>
 
-              <div className="cardContent text-center">
+              <div className=" text-center">
                 <h2 className="text-suggestions text-semibold">Order and pay how you'd like</h2>
 
                 <p className="pt3">
@@ -90,7 +90,7 @@ export default function Rewards() {
                 <img src={gettingStartedThree} alt="3" width={48} />
               </div>
 
-              <div className="cardContent text-center">
+              <div className=" text-center">
                 <h2 className="text-suggestions text-semibold">Earn Stars, get Rewards</h2>
 
                 <p className="pt3">
@@ -119,42 +119,48 @@ export default function Rewards() {
           </div>
           <div className="columns">
             <div className="column">
-              <div className="number text-center">
-                <img src={freebies} alt="1" width={48} />
+              <div className="benefits-image text-center">
+                <img src={freebies} alt="1" width={100} />
               </div>
 
-              <div className="cardContent text-center">
-                <h2 className="text-suggestions text-semibold">Fun freebies</h2>
+              <div className="freebies text-center">
+                <h3 className=" freebies-title text-suggestions text-semibold pt3">Fun freebies</h3>
 
-                <p className="pt3">
+                <p className="freebies-text cardContent pt3">
                 Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.
                 </p>
+
+                <Link to="/" className="benefits-link">Learn more</Link>
               </div>
             </div>
             <div className="column">
-              <div className="number text-center">
-                <img src={benefits} alt="2" width={48} />
+              <div className="benefits-image text-center">
+                <img src={benefits} alt="2" width={100} />
               </div>
 
-              <div className="cardContent text-center">
-                <h2 className="text-suggestions text-semibold">Order & pay ahead</h2>
+              <div className=" text-center">
+                <h3 className="text-suggestions text-semibold pt3">Order & pay ahead</h3>
 
-                <p className="pt3">
+                <p className=" cardContent pt3">
                 Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.
                 </p>
+
+                <Link to="/" className="benefits-link">Learn more</Link>
               </div>
             </div>
             <div className="column">
-              <div className="number text-center">
-                <img src={iceCream} alt="3" width={48} />
+              <div className="benefits-image text-center">
+                <img src={iceCream} alt="3" width={100} />
               </div>
 
-              <div className="cardContent text-center">
-                <h2 className="text-suggestions text-semibold">Get to free faster</h2>
+              <div className=" text-center">
+                <h3 className="text-suggestions text-semibold pt3">Get to free faster</h3>
 
-                <p className="pt3">
+                <p className="cardContent pt3">
                 Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.
                 </p>
+
+                <Link to="/" className="benefits-link">Learn more</Link>
               </div>
             </div>
           </div>

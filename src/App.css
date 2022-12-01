@@ -883,3 +883,17 @@ section a {
   color: #000 !important;
 }
 
+.cardContent {
+  width: 400px;
+  margin-left: 100px;
+}
+
+.benefits-link {
+  color: var(--color-primary);
+  opacity: 90%;
+}
+
+.benefits-link:hover{
+  text-decoration: none;
+  opacity: 100%;
+}
