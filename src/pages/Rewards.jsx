@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Tabs from '../components/Tabs'
+import Tabs from '../components/Tabs';
 
 import gettingStartedOne from '../assets/getting-started-1.png';
 import gettingStartedTwo from '../assets/getting-started-2@2x.png';
 import gettingStartedThree from '../assets/getting-started-3@2x.png';
 import bgHero from '../assets/xl-hero-desktop_2021.png';
-import benefits from '../assets/benefits.png'
-import freebies from '../assets/freebies.png'
-import iceCream from '../assets/ice-cream.png'
-
+import benefits from '../assets/benefits.png';
+import freebies from '../assets/freebies.png';
+import iceCream from '../assets/ice-cream.png';
 
 export default function Rewards() {
   return (
@@ -62,8 +61,11 @@ export default function Rewards() {
                   <Link to="/signup" className="link">
                     join now
                   </Link>
-                  . You can also <Link to='/signup' className='link'>join in the app</Link> to get access to the full range os Starbucks
-                  Rewards benefits
+                  . You can also{' '}
+                  <Link to="/signup" className="link">
+                    join in the app
+                  </Link>{' '}
+                  to get access to the full range os Starbucks Rewards benefits
                 </p>
               </div>
             </div>
@@ -104,9 +106,12 @@ export default function Rewards() {
         <div className="sections">
           <div className="global pt7 px0 text-center">
             <div className="px3">
-              <h2 className='text-mn text-semibold pb3' tabIndex={-1}> Get your favorites for free</h2>
+              <h2 className="text-mn text-semibold pb3" tabIndex={-1}>
+                {' '}
+                Get your favorites for free
+              </h2>
             </div>
-            <div className='text-center'>
+            <div className="text-center">
               <Tabs />
             </div>
           </div>
@@ -115,7 +120,10 @@ export default function Rewards() {
           <div className="textBlock">
             <h1> Endless extras</h1>
 
-            <p>Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee.</p>
+            <p>
+              Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to
+              easy ordering, tasty Rewards and—yes, free coffee.
+            </p>
           </div>
           <div className="columns">
             <div className="column">
@@ -127,10 +135,13 @@ export default function Rewards() {
                 <h3 className=" freebies-title text-suggestions text-semibold pt3">Fun freebies</h3>
 
                 <p className="freebies-text cardContent pt3">
-                Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.
+                  Not only can you earn free coffee, look forward to a birthday treat plus coffee
+                  and tea refills.
                 </p>
 
-                <Link to="/" className="benefits-link">Learn more</Link>
+                <Link to="/" className="benefits-link">
+                  Learn more
+                </Link>
               </div>
             </div>
             <div className="column">
@@ -142,10 +153,12 @@ export default function Rewards() {
                 <h3 className="text-suggestions text-semibold pt3">Order & pay ahead</h3>
 
                 <p className=" cardContent pt3">
-                Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.
+                  Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.
                 </p>
 
-                <Link to="/" className="benefits-link">Learn more</Link>
+                <Link to="/" className="benefits-link">
+                  Learn more
+                </Link>
               </div>
             </div>
             <div className="column">
@@ -157,11 +170,40 @@ export default function Rewards() {
                 <h3 className="text-suggestions text-semibold pt3">Get to free faster</h3>
 
                 <p className="cardContent pt3">
-                Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.
+                  Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting
+                  games.
                 </p>
 
-                <Link to="/" className="benefits-link">Learn more</Link>
+                <Link to="/" className="benefits-link">
+                  Learn more
+                </Link>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="sections mt3">
+          <div className="status text-center">
+            <h2 className="status-title">Cash or card, you earn Status</h2>
+            <p className="status-subtitle">
+              No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up
+              to (really dellicious) Rewards.
+            </p>
+          </div>
+          <div className="first-level mt3">
+            <div className="first-level-left">
+              <h3 className="first-level__title">1★ per dollar</h3>
+              <p className="first-level__subtitle">Pay as you go</p>
+            </div>
+            <div className="first-level-center">
+              <h1>Scan and pay separately</h1>
+              <p>Use cash or creadit/debit card at the register.</p>
+            </div>
+            <div className="first-level-right">
+              <h1>Save payment in the app</h1>
+              <p>
+                Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be
+                able to order ahead or scan and pay at the register in one step.
+              </p>
             </div>
           </div>
         </div>

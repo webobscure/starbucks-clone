@@ -897,3 +897,26 @@ section a {
   text-decoration: none;
   opacity: 100%;
 }
+
+.first-level {
+  display: flex;
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.first-level-left {
+  margin-left: 50px;
+}
+
+.first-level-center {
+  margin-left: 50px;
+}
+
+.first-level-right {
+  margin-left: 50px;
+}
+
+.first-level-right h1 {
+  width: 400px;
+}
